@@ -2,6 +2,7 @@ DROP TABLE IF EXISTS Date_State;
 DROP TABLE IF EXISTS temp;
 DROP TABLE IF EXISTS data;
 DROP TABLE IF EXISTS data2;
+DROP TABLE IF EXISTS Admissions;
 
 .mode csv
 .import INFO330-Final-Project/admissions_releases_states.csv data
