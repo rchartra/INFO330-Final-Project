@@ -31,6 +31,7 @@ with open('admissions_releases_states.csv', 'r') as admissions_file:
             date = admissions_row[0]
             admissions = int(admissions_row[1])
             releases = int(admissions_row[8])
+            state = admissions_row[15]
 
             incarcerated_total = int(populations_row[2])
             incarcerated_white = int(populations_row[3])
