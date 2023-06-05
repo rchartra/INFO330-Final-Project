@@ -1,7 +1,7 @@
 import sqlite3
 import csv
 
-connection = sqlite3.connect('total_test.db')
+connection = sqlite3.connect('database.db')
 cursor = connection.cursor()
 
 cursor.execute('''
