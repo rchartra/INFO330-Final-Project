@@ -4,6 +4,7 @@ DROP TABLE IF EXISTS data;
 DROP TABLE IF EXISTS data2;
 DROP TABLE IF EXISTS Admissions;
 DROP TABLE IF EXISTS Releases;
+DROP TABLE IF EXISTS Incarceration;
 
 .mode csv
 .import INFO330-Final-Project/admissions_releases_states.csv data
