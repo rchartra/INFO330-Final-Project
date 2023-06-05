@@ -33,8 +33,8 @@ with open('admissions_releases_states.csv', 'r') as admissions_file:
             releases = int(admissions_row[8])
             state = admissions_row[15]
 
-            incarcerated_total = int(populations_row[2])
-            incarcerated_white = int(populations_row[3])
+            incarcerated_total = float(populations_row[2])
+            incarcerated_white = float(populations_row[3])
 
             incarceration_nonwhite = incarcerated_total - incarcerated_white
 
