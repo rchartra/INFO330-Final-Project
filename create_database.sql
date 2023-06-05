@@ -87,5 +87,14 @@ INSERT INTO Incarceration SELECT
     FROM data2 AS d
     INNER JOIN Date_State AS ds ON d.state = ds.State AND d.date = ds.Date;
 
+CREATE TABLE Total(
+    item_id INTEGER PRIMARY KEY,
+    releases INTEGER,
+    admissions INTEGER,
+    incarceration INTEGER,
+    incarceration_nonwhite INTEGER,
+    FOREIGN KEY (item_id) REFERENCES Date_State(id)
+);
+
 DROP TABLE data;
 DROP TABLE data2;
