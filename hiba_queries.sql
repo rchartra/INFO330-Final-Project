@@ -1,8 +1,8 @@
 -- How has the number of incarcerations changed over the years?
 -- join Date_State and Incarceration, sum incarceration, group and sort by date
-SELECT strftime('%Y', ds.Date) AS Year, SUM(i.White + i.Black + i.Hispanic + i.Native + i.Asian + i.Other) AS TotalIncarcerations
-FROM Incarceration AS i
-JOIN Date_State AS ds ON i.item_id = ds.ID
+SELECT strftime('%Y', ds.Date) AS Year, SUM(t.incarceration) AS TotalIncarcerations
+FROM Date_State AS ds
+JOIN Total AS t ON t.item_id = ds.ID 
 GROUP BY Year
 ORDER BY Year;
 
